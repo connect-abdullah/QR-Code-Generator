@@ -4,7 +4,7 @@ Generate QR codes effortlessly with this simple yet powerful web application bui
 
 ## 🚀 Live Demo  
 👉 **[E-ScanQr](https://e-scanqr.netlify.app/)** 👈  
-👉 ### Deployed on Netlify
+👉 Deployed on Netlify
 
 ## 🛠 Features  
 ✅ Generate QR codes instantly.  
