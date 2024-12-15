@@ -3,7 +3,8 @@
 Generate QR codes effortlessly with this simple yet powerful web application built using **HTML**, **CSS**, **JavaScript**, and the **GOQR API**! 🎉  
 
 ## 🚀 Live Demo  
-👉 **[Check out the live demo here!](https://your-live-demo-link.com)** 👈  
+👉 **[E-ScanQr](https://e-scanqr.netlify.app/)** 👈  
+👉 ### Deployed on Netlify
 
 ## 🛠 Features  
 ✅ Generate QR codes instantly.  
