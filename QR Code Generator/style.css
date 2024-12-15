@@ -1,0 +1,109 @@
+/* Global Styles */
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #390f1c;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    width: 50%; /* Default width */
+    background-color: #9b92833d;
+    box-shadow: 0px -6px 8px 1px rgba(0, 0, 0, 0.5), 8px 13px 16px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+}
+
+.container > h1 {
+    color: #ffffffd1;
+}
+/* Button Styles */
+#btn {
+    padding: 10px;  
+    font-size: 16px;
+    background-color: #1e90ff; 
+    border: none; 
+    border-radius: 1rem; 
+    cursor: pointer;
+    transition: all 0.5s ease; 
+}
+
+#btn:hover {
+    background-color:  deepskyblue; 
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Label Styles */
+label {
+    font-size: 26px;
+    color: #bdb6b6ad;  
+    transition: all 0.3s ease;  
+}
+
+/* Text Input Styles */
+#text-input {
+    padding: 12px 15px;
+    font-size: 16px;
+    width: 60%; /* Default width */
+    border-radius: 1rem;
+    border: 2px solid #ccc;
+    outline: none;
+    position: relative;  
+}
+
+/* Label Move on Input Focus */
+#text-input:focus + label,
+#text-input:not(:placeholder-shown) + label {
+    top: -10px;  /* Move label up when input is focused */
+    left: 10px;  /* Slightly shift left to align */
+    font-size: 12px;  /* Shrink the font size */
+    color: #4CAF50;  /* Change color to green */
+}
+
+#text-input:focus {
+    border-color: #4CAF50;  /* Change border color when input is focused */
+}
+
+/* QR Code Styles */
+#qr-code > img {
+    border: 6px solid #0000008a;
+    padding: 14px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For Tablets */
+@media (max-width: 768px) {
+    .container {
+        width: 60%; /* Reduce width to 60% on tablets */
+    }
+    #text-input {
+        width: 80%; /* Make input field wider on tablets */
+    }
+    label {
+        font-size: 24px;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Reduce width to 90% on mobiles */
+        padding: 1rem; /* Reduce padding for smaller screens */
+    }
+    #text-input {
+        width: 70%; /* Input field takes full width on mobile */
+    }
+    label {
+        font-size: 20px; /* Smaller font size for label on mobile */
+    }
+    #btn {
+        width: 50%;
+    }
+}
