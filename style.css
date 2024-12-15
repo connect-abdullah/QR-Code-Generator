@@ -70,11 +70,49 @@ label {
     border-color: #4CAF50;  /* Change border color when input is focused */
 }
 
-/* QR Code Styles */
-#qr-code > img {
-    border: 6px solid #0000008a;
-    padding: 14px;
+/* QR Code container */
+#qr-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 170px;
+    margin: 1rem auto;
+    border: 2px solid #0000008a;
+    padding: 18px;
+    background-color: #000000;
+    overflow: hidden;
+    position: relative;
+    opacity: 0; /* Initially hidden for animation */
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in; /* Smooth animation */
 }
+
+/* Loading animation: simple scaling */
+#qr-code.loading {
+    background-color: #1514148a;
+    opacity: 0.5; /* Semi-transparent during loading */
+    animation: pulse 1s infinite; /* Pulsing effect */
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Fade-in effect when QR code is loaded */
+#qr-code.fade-in {
+    opacity: 1;
+    transform: scale(1); /* Reset scale after fade-in */
+}
+
 
 /* Media Queries for Responsive Design */
 
